@@ -1,0 +1,22 @@
+* {
+    padding: 3;
+}
+
+header {
+    background-color: azure;
+}
+
+nav {
+    border-radius: 15px;
+    ;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    clear: both;
+    width: 100%;
+    height: 80px;
+    /* Height of the footer */
+    background: #6cf;
+}
