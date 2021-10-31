@@ -1,3 +1,6 @@
+//def de la raiz
+const rootString = '/';
+
 //definir los caches a utilizar
 const CACHE_APP_SHELL = 'mi-app-shellv4';
 const CACHE_DINAMICO = 'cache-dinamicov3';
