@@ -1,5 +1,5 @@
 //def de la raiz
-const rootString = '/';
+let rootString = '/';
 const stage = 'prod'; //'dev' o 'prod'
 if (stage === 'prod') {
     rootString = '/pwa-base/';
