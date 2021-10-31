@@ -1,6 +1,9 @@
 //def de la raiz
 const rootString = '/';
-
+const stage = 'prod'; //'dev' o 'prod'
+if (stage === 'prod') {
+    rootString = '/pwa-base/';
+}
 //definir los caches a utilizar
 const CACHE_APP_SHELL = 'mi-app-shellv4';
 const CACHE_DINAMICO = 'cache-dinamicov3';
@@ -12,14 +15,14 @@ self.addEventListener('install', event => {
     //creación del cache
     const cacheAppShell = caches.open(CACHE_APP_SHELL).then(cache => {
         return cache.addAll([
-            '/',
-            '/index.html',
-            '/css/style.css',
-            '/js/app.js',
-            '/img/bannerBolsaDeTrabajo.jpeg',
-            '/img/UTH-LOGO-VERT.png',
-            '/img/icons/favicon.ico',
-            '/manifest.json'
+            rootString,
+            rootString + 'index.html',
+            rootString + 'css/style.css',
+            rootString + 'js/app.js',
+            rootString + 'img/bannerBolsaDeTrabajo.jpeg',
+            rootString + 'img/UTH-LOGO-VERT.png',
+            rootString + 'img/icons/favicon.ico',
+            rootString + 'manifest.json'
         ]);
     });
 
