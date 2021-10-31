@@ -2,7 +2,7 @@
 if (navigator.serviceWorker) {
     console.log("Si esta disponible el trabajo con el Service worker");
     //instalar el service worker
-    navigator.serviceWorker.register('../sw.js');
+    navigator.serviceWorker.register('/sw.js');
     console.log(navigator.serviceWorker);
 } else
     console.log("NO esta disponible el trabajo con el Service worker en este browser");
